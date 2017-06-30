@@ -1,0 +1,12 @@
+body{
+	background: grey;
+}
+#email{
+	width: 200px
+}
+#pass{
+	width: 200px;
+}
+#lb{
+	background: limegreen;
+}
