@@ -7,7 +7,7 @@ app.use(express.static('connect'));
 
 
 app.set('view engine','ejs');
-app.set('port',process.env.PORT||5000)
+app.set('port',process.env.PORT||5000) //1
 
 app.get('/',function(req,res){
 	console.log(__dirname)
@@ -108,6 +108,6 @@ app.get('/home',function(req,res){
 	})
 })
 //app.listen(3000,function(){
-app.listen(app.get('port'),function(){
+app.listen(app.get('port'),function(){ //2
 	console.log('example app listening on port 3000');
 })
